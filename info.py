@@ -54,15 +54,15 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'mojahidalam8092')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mklinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '7a303441c79d8055f7980b276074751171062094')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'zxlink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '14491251405451700c783c2f54255a151133b010')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/allmovies_webserieshere')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/SA_Bots_Mklinks')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/SA_movie_request_group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/SA_Bots')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_to_download_movies_in_group')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'Hello My Dear Friends ❤️')
@@ -105,8 +105,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
-URL = "https://akka.onrender.com".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://akka.onrender.com/".format(FQDN, PORT)
+URL = "https://old-rooster-sk7777-b33f2b69.koyeb.app".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://old-rooster-sk7777-b33f2b69.koyeb.app/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'LazyBot'))
@@ -121,9 +121,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://akka.onrender.com/".format(FQDN)
+    URL = "https://old-rooster-sk7777-b33f2b69.koyeb.app/".format(FQDN)
 else:
-    URL = "https://akka.onrender.com/".format(FQDN)
+    URL = "https://old-rooster-sk7777-b33f2b69.koyeb.app/".format(FQDN)
 
 
 
